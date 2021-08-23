@@ -4,4 +4,57 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+//@import './example';
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/bg-img.jpg);
+}
+
+form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+input {
+  width: 700px;
+}
+
+.search-country {
+  text-align: center;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.country-information,
+.countries-list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.country-flag {
+  margin-left: 50px;
+}
+
+.country-info {
+  text-align: left;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+li {
+  align-items: center;
+  margin-top: 10px;
+}
