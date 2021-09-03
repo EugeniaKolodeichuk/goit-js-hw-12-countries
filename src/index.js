@@ -35,14 +35,18 @@ fetch(`https://restcountries.eu/rest/v2/name/${name}`)
             //pnotify
 defaultModules.set(PNotifyMobile, {});
 error({
-    text: 'Too many matches found. Please enter a more specific query.'
+    text: 'Too many matches found. Please enter a more specific query.',
+    delay: 1000,
+    maxTextHeight: null
 });  
         };
         //ввод с ошибкой
         if (data.status === 404) {
              clearContent ()
             error({
-                text: "Please enter correct name of the country."
+                text: "Please enter correct name of the country.",
+                delay: 1000,
+                maxTextHeight: null
             });
         };
         
